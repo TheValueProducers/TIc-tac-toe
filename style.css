@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+section{
+    display: grid;
+    height: 30vw;
+    width: 30vw;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+}
+
+section div{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition-duration: 0.5s;
+    transition-property: background-color;
+}
+
+section div:hover{
+    cursor: pointer;
+}
+
+section div:active{
+    background-color: rgb(177, 170, 170);
+}
+.ex{
+    position: absolute;
+    display: none;
+    font-size: 100px;
+}
+.oh{
+    position: absolute;
+    display: none;
+    font-size: 100px;
+}
+
+.win-label{
+    translate: 0px -100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: green;
+    font-size: 80px;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    transition-property: translate;
+    transition-duration: 1s;
+    transition-delay: 0.5s;
+    
+    
+}
+
+.line{
+    position: absolute;
+    z-index: 1.5;
+    font-size: 15vw;
+    display: none;
+}
+
+
+.left-diagonal{
+    rotate: 45deg;
+    font-size: 20vw;
+    display: none;
+}
+.right-diagonal{
+    rotate: 135deg;
+    font-size: 20vw;
+    display: none;
+}
+.vertical{
+    rotate: 90deg;
+    display: none;
+}
